@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+	<link rel="stylesheet" href="calc1.css">
+</head>
+ 
+<body>
+
+
+	<div class="container">
+		<form name="form">
+		<div class="display">
+		<input type="text" placeholder="0" name="displayResult" disabled />
+		</div>
+		<div class="buttons">
+	  <div class="row">
+		<input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+	  <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+	  <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+	  <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+		</div>
+		
+		<div class="row">
+		<input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+	  <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+	  <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+	  <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+		</div>
+		
+		<div class="row">
+		<input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+	  <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+	  <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+	  <input type="button" name="mulb" value="*" onClick="calcNumbers(mulb.value)">
+		</div>
+		
+		<div class="row">
+		<input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+	  <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+	  <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
+	  <input type="button" class="eval" value="=" onClick="displayResult.value=eval(displayResult.value)">
+		</div>
+		</div>
+		
+		<div class="row">
+			<input type="reset" name="c" value="C">
+		</div>
+		</form>
+	</div>
+    
+    <form name="qq">
+	<div class="question">
+
+		<div class="q1">
+			<input type="text" placeholder="QUESTIONS" name="question" disabled />
+			<button type="button"class="bq1" onclick="return checking1();">CHECK</button>
+		</div>
+	
+		<div class="gq">
+			<button type="button" class="bgq1" onclick="return comp1();">RANDOM QUESTION</button>
+		</div>
+    	</div>
+	
+</form>
+
+
+<form name="logout" action="index.php">
+	<div class="logout">
+        <center>
+		   <button type="submit" name="logout" value="out">logout</button>
+        </center>
+	</div>
+</form>
+
+
+
+
+
+
+	<script src="calc1.js"></script>
+</body>
+	
+</html>

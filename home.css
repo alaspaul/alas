@@ -1,0 +1,64 @@
+*{
+	font-family: times new roman;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+
+}
+
+body, html {
+	background-image: url("home.gif");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	color: black;
+}
+
+h2 {
+	font-family: Arial;
+	font-style: italic; 
+	=
+}
+
+header {
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+button[type=submit] {
+	font-size: 20px;
+	transition: 0.5s ease;
+}
+button[type=submit]:hover {
+    font-size: 50px;
+}
+
+input[type=text]{
+	border-color: blue;
+	width: 200px;
+	height: 30px;
+	margin: 10px;
+	transition: 1s ease;
+	border-radius: 15px;
+}
+input[type=password]{
+	border-color: blue;
+	width: 200px;
+	height: 30px;
+	margin: 10px;
+	transition: 1s ease;
+	border-radius: 15px;
+}
+
+input[type=text]:focus {
+	width: 300px;
+	border-color: red;
+	border-radius: 15px;
+}
+input[type=password]:focus {
+	width: 300px;
+	border-color: red;
+	border-radius: 15px;
+}
